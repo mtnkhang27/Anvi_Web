@@ -26,21 +26,20 @@ a:hover{
   width: 100%;
   height: 100vh;
 }
-.Banner {
+.banner-background {
   @include banner-style('../../img/banner_real.png');
 }
 
-.Intro {
+.intro-background {
   @include banner-style('../../img/1G7A4053.png');
   opacity: 0.2
 }
 .overlay-content {
   position: absolute;
   top: 50%; /* Căn chỉnh dọc */
-  left: 50%; /* Căn chỉnh ngang */
+  left: 30%; /* Căn chỉnh ngang */
   transform: translate(-50%, -50%); /* Để căn giữa chính xác */
-  padding: 20px;
-  border-radius: 10px;
+  padding: 100px;
 }
 
 
@@ -51,7 +50,6 @@ a:hover{
   background: url("../../img/1G7A4053.png");
   position: relative;
 }
-
 
 .border::after{
   content: "";
@@ -65,13 +63,46 @@ a:hover{
   bottom: 0;
   right: 0;
   z-index: -1;
-
 }
 
-
+.appear{
+  display: none;
+}
 [data-aos] {
   visibility: hidden;
 }
 [data-aos].animated {
   visibility: visible;
+}
+
+///Introduction
+.intro-content{
+  text-align: right;
+  font-family: 'Montserrat';
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+.intro-content__title{
+  
+  font-size: 16px;
+  font-weight: 600;
+  color: $green_color;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.intro-content__subtitle{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.29px;
+  color: $green_color;
+  margin-bottom: 5px;
+}
+
+.intro-content__text{
+  font-size: 14px;
+  color: $black-color;
+  line-height: 24px;
+  margin-bottom: 5px;
 }

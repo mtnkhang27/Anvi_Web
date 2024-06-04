@@ -26,7 +26,7 @@ new fullpage('#fullpage', {
 });
 
 $(document).ready(function(){
-  $('.myclass').slick({
+  $('.home__banner').slick({
     arrows: false, 
     autoplay: true,
     autoplaySpeed: 3000,

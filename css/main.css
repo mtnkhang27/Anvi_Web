@@ -597,6 +597,19 @@ body {
   color: blue;
 }
 
+.btn {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1;
+  background-color: #008C50;
+  width: fit-content;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #FFFFFF;
+  border: 0;
+}
+
 .pagination {
   display: flex;
   align-items: center;
@@ -690,7 +703,7 @@ a:hover {
   height: 100vh;
 }
 
-.Banner {
+.banner-background {
   background-image: url("../../img/banner_real.png");
   background-size: cover; /* Makes the background image cover the entire element */
   background-position: center; /* Centers the background image */
@@ -699,7 +712,7 @@ a:hover {
   height: 100vh;
 }
 
-.Intro {
+.intro-background {
   background-image: url("../../img/1G7A4053.png");
   background-size: cover; /* Makes the background image cover the entire element */
   background-position: center; /* Centers the background image */
@@ -712,10 +725,9 @@ a:hover {
 .overlay-content {
   position: absolute;
   top: 50%; /* Căn chỉnh dọc */
-  left: 50%; /* Căn chỉnh ngang */
+  left: 30%; /* Căn chỉnh ngang */
   transform: translate(-50%, -50%); /* Để căn giữa chính xác */
-  padding: 20px;
-  border-radius: 10px;
+  padding: 100px;
 }
 
 .border {
@@ -738,6 +750,49 @@ a:hover {
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+.appear {
+  display: none;
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+
+[data-aos].animated {
+  visibility: visible;
+}
+
+.intro-content {
+  text-align: right;
+  font-family: "Montserrat";
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-content__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #008C50;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.intro-content__subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.29px;
+  color: #008C50;
+  margin-bottom: 5px;
+}
+
+.intro-content__text {
+  font-size: 14px;
+  color: #333333;
+  line-height: 24px;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

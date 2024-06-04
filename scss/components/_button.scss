@@ -1,3 +1,12 @@
 .btn {
-    
+  display: block;
+  text-transform: uppercase;
+  line-height: 1;
+  background-color: $green_color;
+  width: fit-content;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; 
+  color: $white-color;
+  border: 0
 }
