@@ -1,0 +1,44 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  height: 81px;
+  width: 100%;
+  padding: 10px 45px 10px 45px;
+  font-size: 24px;
+  color: $white-color;
+
+}
+
+.header__left{
+  display: flex;
+  font-family: fw-300;
+}
+
+.header__right{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 73px;
+  height: 61px;
+}
+
+.header__right-contact {
+  cursor: pointer;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+.header__right-contact:hover{
+  color: $secondary-color
+}
+
+.header__right-contact i {
+  margin-right: 5px;
+}
+
+
+

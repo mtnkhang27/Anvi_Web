@@ -1,0 +1,77 @@
+//FULLPAGE SETUP
+#fp-nav ul li a.active span {
+  background:  $secondary-color;
+}
+#fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active+.fp-tooltip { 
+    color: $secondary-color;
+    padding-left: 15px;
+    font-size: 15px;
+    align-items: center;
+}
+
+a:hover{
+  text-decoration: none;
+}
+  .container img {
+    width: 100%;
+    height: 100vh;
+  }
+
+//Background
+@mixin banner-style($image-url) {
+  background-image: url($image-url);
+  background-size: cover; /* Makes the background image cover the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  width: 100%;
+  height: 100vh;
+}
+.Banner {
+  @include banner-style('../../img/banner_real.png');
+}
+
+.Intro {
+  @include banner-style('../../img/1G7A4053.png');
+  opacity: 0.2
+}
+.overlay-content {
+  position: absolute;
+  top: 50%; /* Căn chỉnh dọc */
+  left: 50%; /* Căn chỉnh ngang */
+  transform: translate(-50%, -50%); /* Để căn giữa chính xác */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.border {
+  width: 500px;
+  height: 200px;
+  display: block;
+  background: url("../../img/1G7A4053.png");
+  position: relative;
+}
+
+
+.border::after{
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  display: block;
+  border: #000 solid 5px;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+}
+
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animated {
+  visibility: visible;
+}
