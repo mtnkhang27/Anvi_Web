@@ -57,13 +57,13 @@
 
           <div id="fullpage">
             <!--Banner-->
-            <div class="section">
+            <!-- <div class="section">
               <div class = "home__banner">
                 <div class="banner-background"></div>
                 <div class="banner-background"></div>
                 <div class="banner-background"> </div>
               </div>
-            </div>
+            </div> -->
 <!-- 
             <div class="section"> 
               <div class = "intro-background"> </div>
@@ -85,13 +85,53 @@
               <div class="home-activity__background"></div>
               <div class="overlay-content">
                 <div class="home-activity">
-                  <div class="home-activity-content">
+                  <div class="home-activity-content" data-aos = "fade-up" data-aos-duration = "2000">
                     <div class="home-activity-content__title">Lĩnh vực hoạt động </div>
                     <div class="home-activity-content__description">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập.</div>
                     <button class = "btn">chi tiết</button>
                   </div>
 
-                  <div class="home-activity-carousel">
+                  <div class="home-activity-carousel" data-aos = "fade-up" data-aos-duration = "2000">
+                    <div class="home-activity-carousel-element">
+                      <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
+                      <div class = "home-activity-carousel-element-footer">
+                        <div class="home-activity-carousel-element-footer__left">01</div>
+                        <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                      </div>
+                    </div>
+
+                    <div class="home-activity-carousel-element">
+                      <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
+                      <div class = "home-activity-carousel-element-footer">
+                        <div class="home-activity-carousel-element-footer__left">01</div>
+                        <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                      </div>
+                    </div>
+
+                    <div class="home-activity-carousel-element">
+                      <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
+                      <div class = "home-activity-carousel-element-footer">
+                        <div class="home-activity-carousel-element-footer__left">01</div>
+                        <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                      </div>
+                    </div>
+
+                    <div class="home-activity-carousel-element">
+                      <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
+                      <div class = "home-activity-carousel-element-footer">
+                        <div class="home-activity-carousel-element-footer__left">01</div>
+                        <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                      </div>
+                    </div>
+
+                    <div class="home-activity-carousel-element">
+                      <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
+                      <div class = "home-activity-carousel-element-footer">
+                        <div class="home-activity-carousel-element-footer__left">01</div>
+                        <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                      </div>
+                    </div>
+
                     <div class="home-activity-carousel-element">
                       <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
                       <div class = "home-activity-carousel-element-footer">
@@ -138,9 +178,13 @@
           animatedClassName: 'animated',
       });
       $(document).ready(function(){
-  $('.home-activity-carousel').slick({
-
-  });
+        $('.home-activity-carousel').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false,
+          dots: true,
+        });
 });
 		
     </script>
