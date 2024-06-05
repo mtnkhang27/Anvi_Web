@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="link logo" />
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/font-awesome.css" />
     <link rel="stylesheet" href="./css/fancybox.css" />
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="loading"></div>
@@ -56,38 +57,53 @@
 
           <div id="fullpage">
             <!--Banner-->
-            <!-- <div class="section">
+            <div class="section">
               <div class = "home__banner">
                 <div class="banner-background"></div>
                 <div class="banner-background"></div>
                 <div class="banner-background"> </div>
               </div>
-            </div> -->
-
+            </div>
+<!-- 
             <div class="section"> 
               <div class = "intro-background"> </div>
               <div class = "overlay-content">
                 <div class = "intro">
                   <div class="intro-content">
-                    <div class="intro-content__title">GIỚI THIỆU CHUNG</div>
-                    <div class="intro-content__subtitle">CÔNG TY CỔ PHẦN 
+                    <div data-aos="fade-up" class="intro-content__title"  >GIỚI THIỆU CHUNG</div>
+                    <div data-aos="fade-up" class="intro-content__subtitle">CÔNG TY CỔ PHẦN 
                       XUẤT NHẬP KHẨU AN VI</div>
-                    <div class="intro-content__text">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập. Bắt đầu với mục tiêu đơn giản là mang lại những sản phẩm gạo chất lượng cao cho người tiêu dùng, ANVI đã từng bước phát triển và mở rộng hoạt động của mình. Ban đầu, ANVI tập trung vào việc chọn lọc các nguồn gạo tốt nhất từ các vùng trồng lúa uy tín. Sự cống hiến và cam kết của đội ngũ nhân viên đã giúp ANVI xây dựng một chuỗi cung ứng ổn định và đáng tin cậy. </div>
-                    
+                    <div data-aos="fade-up" class="intro-content__text">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập. Bắt đầu với mục tiêu đơn giản là mang lại những sản phẩm gạo chất lượng cao cho người tiêu dùng, ANVI đã từng bước phát triển và mở rộng hoạt động của mình. Ban đầu, ANVI tập trung vào việc chọn lọc các nguồn gạo tốt nhất từ các vùng trồng lúa uy tín. Sự cống hiến và cam kết của đội ngũ nhân viên đã giúp ANVI xây dựng một chuỗi cung ứng ổn định và đáng tin cậy. </div>
+                    <button data-aos="fade-up" class = "btn">chi tiết</button>
+                  </div>
+                  <div data-aos="fade-up" class="intro-image"></div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="section"> 
+              <div class="home-activity__background"></div>
+              <div class="overlay-content">
+                <div class="home-activity">
+                  <div class="home-activity-content">
+                    <div class="home-activity-content__title">Lĩnh vực hoạt động </div>
+                    <div class="home-activity-content__description">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập.</div>
                     <button class = "btn">chi tiết</button>
                   </div>
 
-                  <div class="intro-image"></div>
+                  <div class="home-activity-carousel">
+                    <div class="home-activity-carousel-element">
+                      <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
+                      <div class = "home-activity-carousel-element-footer">
+                        <div class="home-activity-carousel-element-footer__left">01</div>
+                        <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                      </div>
+                    </div>
+
+                  </div> 
+
                 </div>
               </div>
-            </div>
-
-            <div class="section"> 
-                <h1 data-aos = "flip-down" data-aos-duration = "1000">Test animation</h1>
-                <h1 data-aos = "flip-down" data-aos-duration = "1000">Test animation</h1>
-                <h1 data-aos = "flip-down" data-aos-duration = "1000">Test animation</h1>
-                <h1 data-aos = "flip-down" data-aos-duration = "1000">Test animation</h1>
-                <h1 data-aos = "flip-down" data-aos-duration = "1000">Test animation</h1>
             </div>
             
             <div class="section"> 
@@ -108,19 +124,25 @@
       <footer class="footer"></footer>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="./js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/fancybox.js"></script>
     <script src="./js/library.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
           useClassNames: true,
           initClassName: false,
           animatedClassName: 'animated',
       });
+      $(document).ready(function(){
+  $('.home-activity-carousel').slick({
+
+  });
+});
+		
     </script>
     <script src="./js/main.js"></script>
 

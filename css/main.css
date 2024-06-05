@@ -725,43 +725,14 @@ a:hover {
 .overlay-content {
   position: absolute;
   top: 50%; /* Căn chỉnh dọc */
-  left: 30%; /* Căn chỉnh ngang */
+  left: 50%; /* Căn chỉnh ngang */
   transform: translate(-50%, -50%); /* Để căn giữa chính xác */
-  padding: 100px;
+  width: 100%;
 }
 
-.border {
-  width: 500px;
-  height: 200px;
-  display: block;
-  background: url("../../img/1G7A4053.png");
-  position: relative;
-}
-
-.border::after {
-  content: "";
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  display: block;
-  border: #000 solid 5px;
-  left: -50px;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.appear {
-  display: none;
-}
-
-[data-aos] {
-  visibility: hidden;
-}
-
-[data-aos].animated {
-  visibility: visible;
+.intro {
+  display: flex;
+  width: 100%;
 }
 
 .intro-content {
@@ -770,6 +741,8 @@ a:hover {
   align-items: flex-end;
   display: flex;
   flex-direction: column;
+  width: 60%;
+  padding: 45px 90px 45px 45px;
 }
 
 .intro-content__title {
@@ -793,6 +766,114 @@ a:hover {
   color: #333333;
   line-height: 24px;
   margin-bottom: 5px;
+}
+
+.intro-image {
+  width: 300px;
+  background-repeat: no-repeat;
+  display: block;
+  background: url("../../img/Rectangle 4.png");
+  position: relative;
+  background-size: cover;
+}
+
+.intro-image::after {
+  content: "";
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  display: block;
+  border: #008C50 solid 2px;
+  top: -10px;
+  right: 45px;
+  z-index: -1;
+}
+
+.home-activity__background {
+  background-image: url("../../img/1G7A4053.png");
+  background-size: cover; /* Makes the background image cover the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+}
+
+.home-activity {
+  display: flex;
+  width: 100%;
+}
+
+.home-activity-content {
+  text-align: left;
+  font-family: "Montserrat";
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 45px 90px 45px 60px;
+}
+
+.home-activity-content__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.29px;
+  color: #008C50;
+  margin-bottom: 5px;
+}
+
+.home-activity-content__description {
+  font-size: 14px;
+  color: #333333;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.home-activity-carousel-element {
+  width: 230px;
+  height: 300px;
+  background-color: white;
+}
+
+.home-activity-carousel-element__img {
+  width: 100%;
+  height: 200px;
+}
+
+.home-activity-carousel-element-footer {
+  display: flex;
+  font-family: "Montserrat";
+  align-items: center;
+}
+
+.home-activity-carousel-element-footer__left {
+  text-align: center;
+  width: 30%;
+  align-items: center;
+  font-size: 47px;
+  color: #008C50;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+  border-right: 1px solid #008C50;
+}
+
+.home-activity-carousel-element-footer__right {
+  text-align: left;
+  width: 70%;
+  align-items: center;
+  font-size: 16px;
+  color: #333333;
+  justify-content: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  padding-left: 5px;
+  max-height: 3em;
+  text-transform: uppercase; /* Approx height for 2 lines */
 }
 
 /*# sourceMappingURL=main.css.map */
