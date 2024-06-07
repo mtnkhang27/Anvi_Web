@@ -16,7 +16,36 @@ a:hover{
     width: 100%;
     height: 100vh;
   }
+//Slick set up
+.slick-dots { 
+  position: absolute; 
+  top: 100%;
+  left: 50%;
+  list-style: none; 
+  display: block; 
+  display: flex;
+  padding-left: 0;
+  margin: 0;  
+  align-items: center;
+}
+.slick-dots li {
+  margin: 0 4px;
+}
+.slick-dots li button {
+  font-size: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #008C50;
+  outline: 0;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
 
+.slick-dots .slick-active button {
+  background-color: #008C50;
+}
 //Background
 @mixin banner-style($image-url) {
   background-image: url($image-url);
@@ -31,6 +60,10 @@ a:hover{
 }
 
 .intro-background {
+  @include banner-style('../../img/1G7A4053.png');
+  opacity: 0.2
+}
+.project-background{
   @include banner-style('../../img/1G7A4053.png');
   opacity: 0.2
 }
@@ -59,7 +92,6 @@ a:hover{
   
 }
 .intro-content__title{
-  
   font-size: 16px;
   font-weight: 600;
   color: $green_color;
@@ -103,7 +135,7 @@ a:hover{
 }
 
 
-//
+//Activity page 
 .home-activity__background{
   @include banner-style('../../img/1G7A4053.png');
   opacity: 0.2
@@ -113,6 +145,8 @@ a:hover{
   display: flex;
   width: 100%;
   padding: 50px;
+  height: 400px;
+  flex-wrap: wrap;
 }
 
 .home-activity-content{
@@ -143,23 +177,21 @@ a:hover{
 .home-activity-carousel{
   width: 60%;
   display: flex;
-  gap: 1;
 }
 
 .home-activity-carousel-element{
-  width: 230px;
   height: 300px;
   display: block;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
-  padding: 10px;
-
+  margin: 15px;
 }
 
 .home-activity-carousel-element__img{
   width: 100%;
-  height: 200px;
+  height: 70%;
   display: block;
+  object-fit: cover;
 }
 
 .home-activity-carousel-element-footer{
@@ -167,6 +199,7 @@ a:hover{
   font-family: 'Montserrat';
   align-items: center;
   background: $white-color;
+  padding: 5px;
 }
 
 .home-activity-carousel-element-footer__left{
@@ -198,32 +231,145 @@ a:hover{
   max-height: 3em;
   text-transform: uppercase; /* Approx height for 2 lines */
 }
-.slick-dots { 
-  position: absolute; 
-  top: 100%;
-  left: 50%;
-  list-style: none; 
-  display: block; 
+
+//Contact
+.home-contact{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
-  padding-left: 0;
-  margin: 0;  
-  align-items: center;
-}
-.slick-dots li {
-  margin: 0 4px;
-}
-.slick-dots li button {
-  font-size: 0;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 1px solid #008C50;
-  outline: 0;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  transition: all ease 0.3s;
 }
 
-.slick-dots .slick-active button {
-  background-color: #008C50;
+.home-contact-info{
+  font-family: 'Montserrat';
+  height: 100vh;
 }
+
+.home-contact-title{
+  font-size: 30px;
+  line-height: 1.2;
+  color: #008C50;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Montserrat';
+  padding-left: 10px;
+}
+
+.home-contact-subtitle{
+  font-size: 18px;
+  font-weight:900;
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+
+.home-contact-info__content{
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: $black-color;
+}
+
+.home-contact-info__socials{
+  display: flex;
+
+}
+
+.home-contact-info__socials a {
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin-right: 15px;
+  position: relative;
+}
+
+.home-contact-info__socials a img {
+  width: 30px;
+}
+
+.home-contact-info__button{
+  margin-top: 29px;
+}
+.home-contact-form{
+  font-family: 'Montserrat';
+}
+.home-contact-form-element{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.home-contact-form-element__label{
+  color: $black-color;
+}
+
+.home-contact-form-element__input{
+  border: none;
+  border-bottom: 1px solid $black-color;
+  height: 32px;
+  padding-top: 8px;
+}
+.home-contact-form__button{
+  margin-top: 15px;
+}
+
+.home-contact-form-element__input:focus{
+  outline: none
+}
+
+.home-contact-image{
+  width: 100%;
+  height: auto;
+}
+
+.home-contact-left {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.home-contact-padding{ 
+  padding: 60px;
+}
+
+
+//Project
+.home-project{
+  width: 100%;
+  padding: 40px 100px 0px 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+.home-project-heading{
+  font-family: 'Montserrat';
+  padding-bottom: 20px;
+}
+.home-project-heading__title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.29px;
+  color: $green_color;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.home-project-heading__description{
+  font-size: 14px;
+  color: $black-color;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.home-project-carousel{
+
+}
+
+.home-project-carousel-element{
+  height: 330px;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+

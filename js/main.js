@@ -12,18 +12,18 @@ new fullpage('#fullpage', {
   //Fix fullPage not work with AOS animation 
   onLeave: function(){
     jQuery('.section [data-aos]').removeClass("aos-animate");
-},
-onSlideLeave: function(){
-    jQuery('.slide [data-aos]').removeClass("aos-animate");
-},
-afterSlideLoad: function(){
-    jQuery('.slide.active [data-aos]').addClass("aos-animate");
-},
-afterLoad: function(){
-  
-    jQuery('.section.active [data-aos]').addClass("aos-animate");
-   //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
-}
+  },
+  onSlideLeave: function(){
+      jQuery('.slide [data-aos]').removeClass("aos-animate");
+  },
+  afterSlideLoad: function(){
+      jQuery('.slide.active [data-aos]').addClass("aos-animate");
+  },
+  afterLoad: function(){
+    
+      jQuery('.section.active [data-aos]').addClass("aos-animate");
+    //jQuery('.fp-table.active .aos-init').addClass('aos-animate');
+  }
   //
 });
 

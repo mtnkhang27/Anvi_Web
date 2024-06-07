@@ -1,0 +1,8 @@
+@keyframes up {
+  0% {
+    transform: translateY(0); /* Bắt đầu từ vị trí hiện tại */
+  }
+  100% {
+    transform: translateY(-5px); /* Bay lên 50px */
+  }
+}
