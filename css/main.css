@@ -743,6 +743,16 @@ a:hover {
   background-color: #008C50;
 }
 
+.news-background {
+  background-image: url("../../img/1G7A4053.png");
+  background-size: cover; /* Makes the background image cover the entire element */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  width: 100%;
+  height: 100vh;
+  opacity: 0.2;
+}
+
 .banner-background {
   background-image: url("../../img/banner_real.png");
   background-size: cover; /* Makes the background image cover the entire element */
@@ -1071,6 +1081,139 @@ a:hover {
 
 .home-project-carousel-element {
   height: 330px;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.home-storage {
+  width: 100%;
+  padding: 50px 100px 50px 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.home-storage-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.home-storage table th {
+  color: #FFFFFF;
+  background-color: #008C50;
+}
+
+.home-storage table td {
+  padding: 8px;
+}
+
+.home-storage table th {
+  padding: 8px;
+}
+
+.home-storage-image {
+  height: 100%;
+}
+
+.home-storage-left {
+  height: 100%;
+}
+
+.storage-image {
+  width: 300px;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  background: url("../../img/Rectangle 4.png");
+  position: relative;
+  background-size: cover;
+}
+
+.storage-image::after {
+  content: "";
+  width: 100%;
+  height: 110%;
+  position: absolute;
+  display: block;
+  border: #008C50 solid 2px;
+  top: -10px;
+  right: 45px;
+  z-index: -1;
+}
+
+.home-storage-content {
+  font-family: "Montserrat";
+}
+
+.home-storage-content__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.29px;
+  color: #008C50;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.home-storage-content__description {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.home-news {
+  width: 100%;
+  padding: 50px 100px 50px 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-news-top {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.home-news-top__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 57.29px;
+  color: #008C50;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.home-news-top___button {
+  margin: 10px;
+}
+
+.home-news-bottom {
+  height: 100%;
+  padding-top: 40px;
+}
+
+.home-news-carousel-element {
+  height: 400px;
   display: block;
   border-radius: 10px;
   overflow: hidden;
