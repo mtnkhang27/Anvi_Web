@@ -1,304 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="link logo" />
-    <title>Trang chủ</title>
 
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/font-awesome.css" />
-    <link rel="stylesheet" href="./css/fancybox.css" />
-    <link rel="stylesheet" href="./css/library.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <div class="loading"></div>
-    <div class="wrapper">
-      <header class="header">
-        <div>
-          <!--Menu-->
-          <div class = "header__left">
-            <div>
-              Icon Menu  
-            </div>
-            <div>
-              Menu
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="link logo" />
+  <title>Trang chủ</title>
+
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/font-awesome.css" />
+  <link rel="stylesheet" href="./css/fancybox.css" />
+  <link rel="stylesheet" href="./css/library.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css"
+    integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div class="loading"></div>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="header__menu">
+        <div class="header__bars">
+          <div class="header__icon" id="header-button">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+          </div>
+          <span>Menu</span>
+        </div>
+      </div>
+      <a href="index.html" class="header__logo">
+        <img src="./img/logo.png">
+      </a>
+      <div class="header__right">
+        <div class="header__contact">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <a class="header__contact" href="tel:(0296)3536777">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>(0296)3536777</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <nav class="header__list">
+        <ul>
+          <li>
+            <a href="/">Trang chủ</a>
+          </li>
+          <li>
+            <a href="/san-pham.html">SẢN PHẨM</a>
+          </li>
+          <li>
+            <a href="/linh-vuc-hoat-dong.html">LĨNH VỰC HOẠT ĐỘNG</a>
+          </li>
+          <li>
+            <a href="/tuyen-dung.html">TUYỂN DỤNG</a>
+          </li>
+          <li>
+            <a href="/tin-tuc.html">TIN TỨC</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!--Container-->
+
+    <div id="fullpage" style="overflow-x:hidden;">
+      <!--Banner-->
+      <div class="section" id="section1">
+        <div class="home-slider">
+          <div class="home-banner" style="background-image: url('./img/banner_real.png'); width: '100%';">
+            <div class="home-banner__body home-banner__body--bot">
+              <div class="container">
+                <div class="home-banner__flex">
+                  <div class="home-banner__title">
+                    CÔNG TY CỔ PHẦN
+                    <br>
+                    XUẤT NHẬP KHẨU AN VI
+                  </div>
+                  <a href="https://www.youtube.com/watch?v=INx0iFAL9DA" class="home-banner__video">
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-          <!--Logo-->
-          <a href = "index.html">
-            <img src = "./img/logo.png">
-          </a>
+      </div>
 
-          <!--Search and Contact-->
-          <div class = "header__right">
-
-            <div class = "header__right-contact">
-              <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="section" id="section2">
+        <div class="home-banner" style="background-image: url('./img/banner-linhvuchoatdong.png'); width: '100%';">
+          <div class="home-banner__body">
+            <div class="container">
+              <div class="row">
+                <div class="col l-7 m-12 c-12">
+                  <div class="home-content home-content--right">
+                    <div class="home-content__title">GIỚI THIỆU CHUNG</div>
+                    <div class="home-content__header">CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU AN VI</div>
+                    <div class="home-content__description">Công ty An Vi đang sở hữu nhà máy xay xát lúa gạo với
+                      tổng diện tích đất khoảng 11,7ha trong đó khu nhà máy sản xuất hơn 2,5ha đặt tại khu vực thị
+                      xã Tân Châu, tỉnh An Giang. Nhà máy có hệ thống giao thông thuận tiện, đường bộ tiếp giáp với
+                      tỉnh lộ 952 và đường thủy tiếp giáp với kênh Châu Đốc Tân Châu (rộng hơn 180m và cách sông
+                      tiền 1.5km) với mặt tiền sông hơn 500m, cách cửa khẩu Vĩnh Xương và biên giới Campuchia khoảng
+                      hơn 15km, giúp lưu thông hàng hóa vô cùng nhanh chóng. Cùng với đó là hệ thống nhà xưởng máy
+                      móc tự động/bán tự động hiện đại công suất lớn của các công ty hàng đầu tư Buhler, Lamico, Bùi
+                      Văn Ngọ...đây là một trong những nhà máy lớn nhất tại khu vực đồng bằng sông Cửu Long ở thời
+                      điểm hiện tại.</div>
+                    <button class="btn">Chi tiết</button>
+                  </div>
+                </div>
+                <div class="col l-5 m-12 c-12">
+                  <div class="home-image">
+                    <img src="img/Rectangle 4.png">
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div class = "header__right-contact">
-              <i class="fa-solid fa-phone-volume"></i>
-              <span>(0296) 3536777</span>
-            </div>
-
           </div>
-        
-      </header>
+        </div>
+      </div>
 
-      <main class="main">
-        <!--Container-->
-        <div>
-          <div id="fullpage">
-            <!--Banner-->
-            <div class="section">
-              <div class = "home__banner">
-                <div class="banner-background"></div>
-                <div class="banner-background"></div>
-                <div class="banner-background"> </div>
-              </div>
-            </div>
-
-            <div class="section"> 
-              <div class = "intro-background"> </div>
-              <div class = "overlay-content">
-                <div class = "intro">
-                  <div class="intro-content">
-                    <div data-aos="fade-up" class="intro-content__title"  >GIỚI THIỆU CHUNG</div>
-                    <div data-aos="fade-up" class="intro-content__subtitle">CÔNG TY CỔ PHẦN 
-                      XUẤT NHẬP KHẨU AN VI</div>
-                    <div data-aos="fade-up" class="intro-content__text">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập. Bắt đầu với mục tiêu đơn giản là mang lại những sản phẩm gạo chất lượng cao cho người tiêu dùng, ANVI đã từng bước phát triển và mở rộng hoạt động của mình. Ban đầu, ANVI tập trung vào việc chọn lọc các nguồn gạo tốt nhất từ các vùng trồng lúa uy tín. Sự cống hiến và cam kết của đội ngũ nhân viên đã giúp ANVI xây dựng một chuỗi cung ứng ổn định và đáng tin cậy. </div>
-                    <button data-aos="fade-up" class = "btn">chi tiết</button>
+      <div class="section" id="section3">
+        <div class="home-banner" style="background-image: url('./img/banner-linhvuchoatdong.png'); width: '100%';">
+          <div class="home-banner__body">
+            <div class="container">
+              <div class="row">
+                <div class="col l-4 m-12 c-12">
+                  <div class="home-content">
+                    <div class="home-content__header"> LĨNH VỰC HOẠT ĐỘNG</div>
+                    <div class="home-content__description">
+                      <ul style="margin: 0; padding-left: 15px">
+                        <li>Xay xát thóc lúa, đánh bóng gạo</li>
+                        <li>Mua bán lương thực, nông sản nguyên liệu và sơ chế</li>
+                      </ul>
+                    </div>
+                    <button class="btn">CHI TIẾT</button>
                   </div>
-                  <div data-aos="fade-up" class="intro-image"></div>
                 </div>
-              </div>
-            </div>
-
-            <div class="section"> 
-              <div class="home-activity__background"></div>
-              <div class="overlay-content">
-                <div class = "row">
-                  <div class="home-activity">
-                    <div class="home-activity-content" data-aos = "fade-up" data-aos-duration = "2000">
-                      <div class="home-activity-content__title">Lĩnh vực hoạt động </div>
-                      <div class="home-activity-content__description">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập.</div>
-                      <button class = "btn">chi tiết</button>
+                <div class="col l-8 m-12 c-12">
+                  <div class="home-wrap" id="slide-activity">
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">1</div>
+                        <div class="home-wrap__title">Xay xác thóc lúa đánh bóng gạo</div>
+                      </div>
                     </div>
 
-                    <div class="home-activity-carousel" data-aos = "fade-up" data-aos-duration = "2000">
-                      <div class="home-activity-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">2</div>
+                        <div class="home-wrap__title">Xay xác thóc lúa đánh bóng gạo</div>
                       </div>
+                    </div>
 
-                      <div class="home-activity-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">3</div>
+                        <div class="home-wrap__title">Xay xác thóc lúa đánh bóng gạo</div>
                       </div>
+                    </div>
 
-                      <div class="home-activity-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">4</div>
+                        <div class="home-wrap__title">Xay xác thóc lúa đánh bóng gạo</div>
                       </div>
-
-                      <div class="home-activity-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-activity-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-activity-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-                    </div> 
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            
-            
+          </div>
+        </div>
+      </div>
 
-            <div class="section"> 
-              <div class="project-background"></div>
-              <div class="overlay-content">
-                <div class="row">
-                  <div class="home-project">
-                    <div class="home-project-heading">
-                      <div class="home-project-heading__title">Dự án tiêu biểu</div>
-                      <div class="home-project-heading__description">ANVI là một thương hiệu gạo được thành lập từ năm 2010, nằm trong khuôn khổ của công ty ABC. Quá trình hình thành của ANVI xuất phát từ tâm huyết và tầm nhìn của nhóm sáng lập.</div>
-                      <button class = "btn">Chi tiết</button>
-                    </div>
-                    <div class="home-project-carousel" data-aos = "fade-up" data-aos-duration = "2000">
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-project-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-                    </div> 
-                  </div>
+      <div class="section" id="section4">
+        <div class="home-banner" style="background-image: url('./img/banner-linhvuchoatdong.png'); width: '100%';">
+          <div class="home-banner__body">
+            <div class="container">
+              <div class="row">
+                <div class="col l-12 m-12 c-12">
+                  <div class="home-content__header">BAN LÃNH ĐẠO</div>
                 </div>
-              </div>
-            </div>
-            <!--Tin tức-->
-            <div class="section">
-              <div class="news-background"></div>
-              <div class="overlay-content">
-                <div class="row">
-                  <div class="home-news">
-                    <div class="home-news-top">
-                      <div class="home-news-top__title">tin tức nổi bật</div>
-                      <button class = "btn home-news-top__button">Xem tin mới nhất</button>
+                <div class="col l-12 m-12 c-12">
+                  <div class="home-wrap" id="slide-person">
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">1</div>
+                        <div class="personSlider">
+                          <div class="personSlider__title">Mai Trần Nguyễn Khang</div>
+                          <div class="personSlider__description">Chức vụ: Thành viên hội đồng quản trị</div>
+                        </div>
+                      </div>
                     </div>
-
-                    <div class="home-news-bottom">
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">2</div>
+                        <div class="personSlider">
+                          <div class="personSlider__title">Mai Trần Nguyễn Khang</div>
+                          <div class="personSlider__description">Chức vụ: Thành viên hội đồng quản trị</div>
                         </div>
                       </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                    </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">3</div>
+                        <div class="personSlider">
+                          <div class="personSlider__title">Mai Trần Nguyễn Khang</div>
+                          <div class="personSlider__description">Chức vụ: Thành viên hội đồng quản trị</div>
                         </div>
                       </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
-                        </div>
-                      </div>
-
-                      <div class="home-news-carousel-element">
-                        <img class = "home-activity-carousel-element__img" src = "../../img/Rectangle 4.png"/>
-                        <div class = "home-activity-carousel-element-footer">
-                          <div class="home-activity-carousel-element-footer__left">01</div>
-                          <div class="home-activity-carousel-element-footer__right">Sản xuất và xuất khẩu gạo</div>
+                    </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="home-wrap__number">4</div>
+                        <div class="personSlider">
+                          <div class="personSlider__title">Mai Trần Nguyễn Khang</div>
+                          <div class="personSlider__description">Chức vụ: Thành viên hội đồng quản trị</div>
                         </div>
                       </div>
                     </div>
@@ -306,149 +256,332 @@
                 </div>
               </div>
             </div>
-            <div class="section"> 
-              <div class="storage-background"></div>
-              <div class="overlay-content">
-                <div class="row">
-                  <div class="home-storage">
-                    <div class="col c-4 home-storage-image">
-                      <div class="storage-image"></div>
-                    </div>
-                    <div class="col c-8 home-storage-left">
-                      <div class = "home-storage-content">
-                        <div class="home-storage-content__title">Về năng lực kho chứa</div>
-                        <div class="home-storage-content__description">Công ty An Vi đang sở hữu nhà máy xay xát lúa gạo với tổng diện tích đất khoảng 11,7ha trong đó khu nhà máy sản xuất hơn 2,5ha đặt tại khu vực thị xã Tân Châu, tỉnh An Giang. Nhà máy có hệ thống giao thông thuận tiện, đường bộ tiếp giáp với tỉnh lộ 952 và đường thủy tiếp giáp với kênh Châu Đốc Tân Châu (rộng hơn 180m và cách sông tiền 1.5km) với mặt tiền sông hơn 500m, cách cửa khẩu Vĩnh Xương và biên giới Campuchia khoảng hơn 15km, giúp lưu thông hàng hóa vô cùng nhanh chóng. Cùng với đó là hệ thống nhà xưởng máy móc tự động/bán tự động hiện đại công suất lớn của các công ty hàng đầu tư Buhler, Lamico, Bùi Văn Ngọ...đây là một trong những nhà máy lớn nhất tại khu vực đồng bằng sông Cửu Long ở thời điểm hiện tại. Trong trung và dài hạn, An Vi đặt mục tiêu trở thành một công ty sản xuất kinh doanh lớn trong ngành lương thực, qua đó nhằm tối đa hóa lợi nhuận cho cổ đông, tạo việc làm ổn định cho người lao động, nâng tầm mức sống cho người dân nói riêng, người dân nói chung tại An Giang và Đồng bằng sông Cửu Long. Công ty An Vi cũng đang có kế hoạch đầu tư và phát triển các sản phẩm gạo và các sản phẩm giá trị gia tăng sau gạo. Liên kết chặt chẽ cùng bà con nông dân thông qua các hợp tác xã để tổ chức sản xuất với quy mô lớn và quy trình chặt chẽ hơn. Không ngừng cải thiện điều kiện làm việc và đời sống của người lao động trong Công ty, góp phần xây dựng cơ sở hạ tầng phát triển kinh tế đất nước, nâng cao đời sống và sức khỏe nhân dân.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section5">
+        <div class="home-banner" style="background-image: url('./img/banner-linhvuchoatdong.png'); width: '100%';">
+          <div class="home-banner__body">
+            <div class="container">
+              <div class="row">
+                <div class="col l-12 m-12 c-12" style="display: flex; justify-content: space-between;">
+                  <div class="home-content__header">TIN TỨC</div>
+                  <button class="btn">Xem tin tức mới nhất</button>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                  <div class="home-wrap" id="slide-new">
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="newSlider">
+                          <div class="newSlider__title">Cơ hội đổi đời cho hàng triệu nông dân vùng Đồng bằng sông
+                            Hồng làm giàu với 1 tỷ đô</div>
+                          <div class="newSlider__date">2024-06-26 10:29:03</div>
+                          <div class="newSlider__description">Đề án "Phát triển bền vững 1 triệu ha chuyên canh lúa
+                            chất lượng balalalalala</div>
+                        </div>
                       </div>
-                      <table class = "home-storage-table">
-                        <tr>
-                          <th style = "width: 30%">Tên kho chứa</th>
-                          <th style = "width: 10%">Diện tích</th>
-                          <th style = "width: 10%">Sức chứa lúa</th>
-                          <th style = "width: 10%">Sức chứa gạo</th>
-                          <th style = "width: 40%">Sản phẩm</th>
-                        </tr>
-                        <tr>
-                          <td>Công ty cổ phần xuất nhập khẩu An Vi</td>
-                          <td>117.238	</td>
-                          <td>46.000</td>
-                          <td>37.000</td>
-                          <td>Gạo thành phẩm các loại; Tấm các loại và cám các loại</td>
-                        </tr>
-                      </table>
                     </div>
 
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="newSlider">
+                          <div class="newSlider__title">Cơ hội đổi đời cho hàng triệu nông dân vùng Đồng bằng sông
+                            Hồng làm giàu với 1 tỷ đô</div>
+                          <div class="newSlider__date">2024-06-26 10:29:03</div>
+                          <div class="newSlider__description">Đề án "Phát triển bền vững 1 triệu ha chuyên canh lúa
+                            chất lượng balalalalala</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="newSlider">
+                          <div class="newSlider__title">Cơ hội đổi đời cho hàng triệu nông dân vùng Đồng bằng sông
+                            Hồng làm giàu với 1 tỷ đô</div>
+                          <div class="newSlider__date">2024-06-26 10:29:03</div>
+                          <div class="newSlider__description">Đề án "Phát triển bền vững 1 triệu ha chuyên canh lúa
+                            chất lượng balalalalala</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home-wrap__item">
+                      <a class="home-wrap__image">
+                        <img src="img/1G7A4053.png">
+                      </a>
+                      <div class="home-wrap__body">
+                        <div class="newSlider">
+                          <div class="newSlider__title">Cơ hội đổi đời cho hàng triệu nông dân vùng Đồng bằng sông
+                            Hồng làm giàu với 1 tỷ đô</div>
+                          <div class="newSlider__date">2024-06-26 10:29:03</div>
+                          <div class="newSlider__description">Đề án "Phát triển bền vững 1 triệu ha chuyên canh lúa
+                            chất lượng balalalalala</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          
-            <div class="section"></div>
-            <div class="section"> 
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section6">
+        <div class="home-banner" style="background-image: url('./img/banner-linhvuchoatdong.png'); width: '100%';">
+          <div class="home-banner__body">
+            <div class="container">
+              <div class="row">
+                <div class="col l-4 m-12 c-12">
+                  <div class="home-image">
+                    <img src="img/Rectangle 4.png">
+                  </div>
+                </div>
+                <div class="col l-8 m-12 c-12">
+                  <div class="home-content">
+                    <div class="home-content__header">Năng lực nhà máy An vi</div>
+                    <table class="home-content__table" style="margin-bottom: 40px;">
+                      <tr>
+                        <th style="width: 30%">Tên kho chứa</th>
+                        <th style="width: 10%">Diện tích</th>
+                        <th style="width: 10%">Sức chứa lúa</th>
+                        <th style="width: 10%">Sức chứa gạo</th>
+                        <th style="width: 40%">Sản phẩm</th>
+                      </tr>
+                      <tr>
+                        <td>Công ty cổ phần xuất nhập khẩu An Vi</td>
+                        <td>117.238 </td>
+                        <td>46.000</td>
+                        <td>37.000</td>
+                        <td>Gạo thành phẩm các loại; Tấm các loại và cám các loại</td>
+                      </tr>
+                    </table>
+                    <div class="home-content__header">Công suất hoạt động</div>
+                    <table class="home-content__table">
+                      <tr>
+                        <th style="width: 15%">STT</th>
+                        <th style="width: 45%">Công đoạn hoạt động</th>
+                        <th style="width: 20%">Đơn vị tính</th>
+                        <th style="width: 20%">Công suất</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Công đoạn sấy</td>
+                        <td>Tấn / ngày</td>
+                        <td>2.061</td>
+                      </tr>
+
+                      <tr>
+                        <td>2</td>
+                        <td>Công đoạn bốc vỏ</td>
+                        <td>Tấn / ngày</td>
+                        <td>1.800</td>
+                      </tr>
+
+                      <tr>
+                        <td>3</td>
+                        <td>Công đoạn xát trắng</td>
+                        <td>Tấn / ngày</td>
+                        <td>1.200</td>
+                      </tr>
+
+                      <tr>
+                        <td>4</td>
+                        <td>Công đoạn lau bóng</td>
+                        <td>Tấn / ngày</td>
+                        <td>1.056</td>
+                      </tr>
+
+                      <tr>
+                        <td>5</td>
+                        <td>Công đoạn tách màu</td>
+                        <td>Tấn / ngày</td>
+                        <td>983</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section7">
+        <div class="home-banner" style="background-image: url('./img/banner-linhvuchoatdong.png'); width: '100%';">
+          <div class="home-banner__body">
+            <div class="container">
+              <div class="row">
+                <div class="col l-6 m-12 c-12">
+                  <div class="home-content">
+                    <div class="home-content__header">ĐỐI TÁC</div>
+                  </div>
+                </div>
+                <div class="col l-6 m-12 c-12">
+                  <div id="slide-partner" class="home-partner">
+                    <div class="home-partner__element">
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                    </div>
+
+                    <div class="home-partner__element">
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                    </div>
+
+                    <div class="home-partner__element">
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                    </div>
+
+                    <div class="home-partner__element">
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                      <div>
+                        <img src="img/viettinbank.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section8">
+        <div class="home-banner">
+          <div class="row">
+            <div class="col l-8 m-12 c-12">
               <div class="home-contact">
-                <div class="col">
-                    <div class="row home-contact-padding">
-                      <div class="home-contact-title">Thông tin liên lạc</div>
-                      <div class="home-contact-left">
-                        <div class="col c-6">
-                          <div class="home-contact-info">
-                            <div class="home-contact-subtitle">Văn phòng đại diện</div>
-                            <div class="home-contact-content">Tổ 10, Khóm Long Thạnh, Phường Long Châu, Thị xã Tân Châu, Tỉnh An Giang, Việt Nam</div>
-                            <div class="home-contact-subtitle">KẾT NỐI VỚI CHÚNG TÔI</div>
-                            <div class="home-contact-info__socials">
-                              <a href = "#"> <img src = "../../img/icons/facebook.png"/></a>
-                              <a href = "#"> <img src = "../../img/icons/phone.png"/></a>
-                              <a href = "#"> <img src = "../../img/icons/zalo.png"/></a>
-                              <a href = "#"> <img src = "../../img/icons/messenger.png"/></a>
-                            </div>
-                            <div class="home-contact-subtitle">Email</div>
-                            <a href="mailto:ketoan@anviimex.com" class = "home-contact-info__content">ketoan@anviimex.com</a>
-                            <div class="home-contact-subtitle">Điện thoại</div>
-                            <a href="tel:(0296) 3536777" class = "home-contact-info__content">(0296) 3536777</a>
-                            <button class ="btn home-contact-info__button">Download profile</button>
-                          </div>
-                        </div>
-                        <div class="col c-6">
-                          <form class="home-contact-form">
-                            <div class="home-contact-subtitle">Đăng kí nhận thông tin</div>
-                            <div class="home-contact-form-element">
-                              <label class = "home-contact-form-element__label">Nhập họ tên</label>
-                              <input class = "home-contact-form-element__input">
-                            </div>
-                            <div class="home-contact-form-element">
-                              <label class = "home-contact-form-element__label">Nhập email</label>
-                              <input class = "home-contact-form-element__input">
-                            </div>
-                            <div class="home-contact-form-element">
-                              <label class = "home-contact-form-element__label">Nhập số điện thoại</label>
-                              <input class = "home-contact-form-element__input">
-                            </div>
-                            <div class="home-contact-form-element">
-                              <label class = "home-contact-form-element__label">Nội dung</label>
-                              <input class = "home-contact-form-element__input">
-                            </div>
-                            <button class = "btn home-contact-form__button">Gửi</button>
-                          </form>
-                        </div>
+                <div class="home-content__header">THÔNG TIN LIÊN HỆ</div>
+                <div class="row">
+                  <div class="col l-6 m-12 c-12">
+                    <div class="home-contact__item">
+                      <div class="home-contact__title">VĂN PHÒNG ĐẠI DIỆN</div>
+                      <div class="home-contact__content">Tổ 10, Khóm Long Thạnh, Phường Long Châu, Thịu xã Tân Châu,
+                        Tỉnh An Giang, Việt Nam</div>
+                    </div>
+
+                    <div class="home-contact__item">
+                      <div class="home-contact__title">KẾT NỐI VỚI CHÚNG TÔI</div>
+                      <div class="home-contact__socials">
+                        <a href="#"> <img src="../../img/icons/facebook.png" /></a>
+                        <a href="#"> <img src="../../img/icons/phone.png" /></a>
+                        <a href="#"> <img src="../../img/icons/zalo.png" /></a>
+                        <a href="#"> <img src="../../img/icons/messenger.png" /></a>
                       </div>
                     </div>
-          
-                  <div class="col c-4"></div>
-                </div>
-                
-                <div class="col c-4">
-                  <div class="home-contact-image">
-                    <img src = "../../img/Frame 585.png"/>
+
+                    <div class="home-contact__item">
+                      <div class="home-contact__title">EMAIL</div>
+                      <div class="home-contact__flex">
+                        <a>ketoan@anviimex.vn</a>
+                        <span> | </span>
+                        <a>contact@anviimex.vn</a>
+                      </div>
+                    </div>
+
+                    <div class="home-contact__item">
+                      <div class="home-contact__title">Số điện thoại</div>
+                      <div class="home-contact__content">(0296)3436777</div>
+                    </div>
+                    <div class="home-contact__item">
+                      <button class="btn">Download Profile</button>
+                    </div>
+                  </div>
+                  <div class="col l-6 m-12 c-12">
+                    <form class="home-form" id="contactForm">
+                      <div class="home-contact__title">ĐĂNG KÍ NHẬN THÔNG TIN</div>
+                      <div class="home-form__element">
+                        <label class="home-form__label">Nhập họ tên</label>
+                        <input class="home-form__input">
+                      </div>
+                      <div class="home-form__element">
+                        <label class="home-form__label">Nhập Email</label>
+                        <input class="home-form__input">
+                      </div>
+                      <div class="home-form__element">
+                        <label class="home-form__label">Nhập số điện thoại</label>
+                        <input class="home-form__input">
+                      </div>
+                      <div class="home-form__element">
+                        <label class="home-form__label">Nhập nội dung</label>
+                        <input class="home-form__input">
+                      </div>
+                      <div class="home-form__element">
+                        <button class="btn home-contact-form__button" style="margin-top: 8px;">Gửi</button>
+                      </div>
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
+
+            <div class="col l-4 m-0 c-0">
+              <div class="home-contact__image" style="background-image: url('./img/1G7A4053.png');">
+              </div>
+            </div>
           </div>
         </div>
-      </main>
-      <footer class="footer"></footer>
+      </div>
+
+
     </div>
 
+  </main>
+  <footer class="footer"></footer>
+  </div>
 
-    <script src="./js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/fancybox.js"></script>
-    <script src="./js/library.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-          useClassNames: true,
-          initClassName: false,
-          animatedClassName: 'animated',
-      });
-      $(document).ready(function(){
-        $('.home-activity-carousel').slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          arrows: false,
-          dots: true,
-        });
-        $('.home-project-carousel').slick({
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          arrows: false,
-          dots: true,
-        });
-        $('.home-news-bottom').slick({
-          infinite: true,
-          slidesToShow: 4,
-          slidesToScroll: 4,
-          arrows: false,
-          dots: true,
-        });
-  
-        
-});
-		
-    </script>
-    <script src="./js/main.js"></script>
 
-  </body>
+  <script src="./js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
+    integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/slick.js"></script>
+  <script src="./js/fancybox.js"></script>
+  <script src="./js/library.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    window.FontAwesomeConfig = { autoReplaceSvg: false }
+  </script>
+  <script src="./js/font-awesome.js"></script>
+
+  <script src="./js/main.js"></script>
+
+</body>
+
 </html>

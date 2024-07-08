@@ -1,0 +1,76 @@
+.delete{
+  display: none;
+}
+
+.fp-watermark{
+  display:none;
+}
+
+#fp-nav {
+  left: 15px !important;
+  ul {
+      li {
+          margin: 24px 0;
+          width: 12px;
+          height: 12px;
+          align-items: center;
+          a {
+              background-color: rgba(61, 61, 61, 0.6);
+              border-radius: 50%;
+              transition: all ease 0.3s;
+              transition: all ease 0.3s;
+              span {
+                  display: none;
+              }
+              &::before {
+                  content: "";
+                  display: block;
+                  width: 0;
+                  height: 2px;
+                  background-color: $secondary-color;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  right: 100%;
+                  transition: all ease 0.3s;
+              }
+              &::after{
+                  content: "";
+                  display: block;
+                  width: 30px;
+                  height: 30px;
+                  background-color: rgba(223, 162, 68, 0.4);
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%) scale(0);
+                  border-radius: 50px;
+                  opacity: 0;
+                  transition: all ease 0.3s;
+              }
+              &.active,
+              &:hover {
+                  background-color: $secondary-color;
+                  & + .fp-tooltip {
+                      opacity: 1;
+                      width: auto;
+                      color: $secondary-color !important;
+                  }
+                  &::before {
+                      width: 30px;
+                  }
+                  &::after{
+                      transform: translate(-50%, -50%) scale(1);
+                      opacity: 1;
+                  }
+              }
+          }
+          & .fp-tooltip {
+              color: $white-color !important;
+              left: 30px !important;
+              text-transform: uppercase;
+              font-size: 12px !important;
+          }
+      }
+  }
+}

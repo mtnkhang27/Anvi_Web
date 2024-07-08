@@ -1,0 +1,139 @@
+.product{
+  padding: 60px;
+  &__list{
+
+  };
+  &__item{
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.25);
+    display: block;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: all ease 0.3s;
+    &__image {
+      width: 100%;
+      height: auto;
+    };
+
+    &__name{
+      text-align: center;
+      color: $black-color;
+      font-size: 24px;
+      font-family: mon-600;
+      margin-top: 8px;
+      transition: all linear 0.3s;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      transition: all linear 0.3s;
+      @include tablet-mobile{
+          font-size: 20px;
+      }
+    }
+  }
+}
+
+.tabList{
+  align-items: center;
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    display: block;
+    padding: 15px 30px;
+    border: 1px solid $black-color;
+    border-radius: 10px;
+    line-height: 1;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    &.active{
+      background-color: $green-color;
+      color: $white-color;
+    }
+  }
+}
+
+.detailProduct{
+  margin: 40px 0 100px 0;
+  &__image{
+    &__for{
+      img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    &__nav{
+      margin-left: 50px;
+    }
+  }
+  &__info{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px 10px;
+  }
+  &__name{
+    font-size: 32px;
+    font-family: 'mon-700';
+    color: $green-color;
+    @include tablet-mobile{
+      font-size: 22px;
+    }
+  }
+  &__header{
+    font-size: 18px;
+    font-family: 'mon-600';
+    @include tablet-mobile{
+      font-size: 16px;
+    }
+  }
+  &__body{
+    font-size: 16px;
+    font-family: 'mon-400';
+    padding-left: 20px;
+    @include tablet-mobile{
+      font-size: 14px;
+    };
+    img{
+      width: 100%;
+      height: auto;
+    }
+    table{
+      width: 100%;
+      td {
+        border: 1px solid $black-color;
+        text-align: center;
+      }
+      tr {
+        td:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+    
+  }
+  &__bottom{
+    font-size: 18px;
+    font-family: 'mon-500';
+    margin: 20px 0;
+    span{
+      color: $green-color;
+    }
+  }
+  &__btn{
+    text-decoration: none;
+    background-color: $primary-color;
+    font-size: 18px;
+    padding: 20px;
+    font-family: 'mon-500';
+    margin-bottom: 15px;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
